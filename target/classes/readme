@@ -1,0 +1,20 @@
+常用注解
+
+@Api：将Controller标记为Swagger文档资源。
+
+@ApiOperation：描述一个类的一个方法，或者说一个接口
+
+@ApiImplicitParams ：多个参数描述
+@ApiImplicitParam：单个参数描述
+
+@ApiModel：用对象来接收参数
+
+@ApiModelProperty：用对象接收参数时，描述对象的一个字段
+其它
+
+@ApiResponse：HTTP响应其中1个描述
+@ApiResponses：HTTP响应整体描述
+API文档访问与调试
+
+完成上述操作，启动Spring Boot程序，Swagger会默认把所有Controller中的RequestMapping方法都生成API出来。
+访问：http://localhost:8080/swagger-ui.html就能看到生成的RESTful API的页面。
